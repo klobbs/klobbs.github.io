@@ -26,7 +26,7 @@
             // I wrote this in 5 minutes and am tired. maybe I'll clean it up later.
             $(function() {
 
-                var nouns = [ "Taylor Swift ours ", "taylor swift 22",  "taylor swift you belong with me",  "taylor swift mean",  "taylor swift wildest dreams",  "taylor swift blank space", "taylor swift fifteen"];
+                var nouns = [ "Taylor Swift ours ", "taylor swift 22", "Taylor Swift", "taylor swift you belong with me",  "taylor swift mean",  "taylor swift wildest dreams",  "taylor swift blank space", "taylor swift fifteen"];
 
                 function get_random_word() {
                     return nouns[Math.floor(Math.random()*nouns.length)];
