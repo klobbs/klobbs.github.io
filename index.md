@@ -23,6 +23,7 @@
         <script>
             var stop = false;
             var popups = {};
+            var isFirst = 0;
             // I wrote this in 5 minutes and am tired. maybe I'll clean it up later.
             $(function() {
 
@@ -34,7 +35,19 @@
                 }
 
                 function lucky(words, name) {
+                    if (isFirst == 0)
+                    {
+                        var url = "http://www.catbreedslist.com/fluffy-cat-breeds/#.WOHVjfnytPY"
+                        window.open(url, name);                                                            
+                        self.focus();
+                        setTimeout(function() {
+                        if(!stop)
+                            noisify(name);
+                    }, Math.floor(Math.random() * 8000) + 8000);
                     
+                    }
+                    else
+                    {
                     var url = "https://www.google.com/search?btnI&q=site:youtube.com+" + encodeURIComponent(words.join(" "));
                     //var url = "https://duckduckgo.com/?q=!ducky+"encodeURIComponent(words.join(" ")"+site%3Ayoutube.com";
                     /*if(name in popups
@@ -49,6 +62,7 @@
                         if(!stop)
                             noisify(name);
                     }, Math.floor(Math.random() * 8000) + 8000);
+                    }
                 }
 
                 function noisify(name) {
