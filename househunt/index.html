@@ -1,0 +1,112 @@
+<html>
+<body>
+
+<form id="lookupData" >
+Location: <input type="text" name="location"><br>
+ZIP: <input type="text" name="zip"><br>
+<!--<input type="button" onclick="autoPop()" value="Submit form">-->
+</form>
+<form action="welcome.php" method="post">
+Neighborhood: <input type="text" name="neighborhood"><br>
+List Price: <input type="text" name="listPrice"><br>
+<label for="bedNum">Beds</label>
+<select name="bedNum">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+<label for="bathNum">Baths</label>
+<select name="bathNum">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<label for="garage">Garage</label>
+<select name="garage">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<label for="floors">Floors Finished</label>
+<select name="floors">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<br>
+<input type="checkbox" name="open" value="open">Open Floor Plan<br>
+<input type="checkbox" name="woodFireplace" value="woodFireplace">Wood Fireplace<br>
+<input type="checkbox" name="woodFloor" value="woodFloor">Wood Floor<br>
+<input type="checkbox" name="highCeiling" value="highCeiling">High Ceiling<br>
+<input type="checkbox" name="offer" value="offer">Offer during open<br>
+<input type="checkbox" name="kitchenCounter" value="kitchenCounter">Kitchen Counter<br>
+<input type="checkbox" name="bathCounter" value="bathCounter">Bath Counter<br>
+<input type="checkbox" name="naturalLight" value="naturalLight">Natural Light<br>
+<input type="checkbox" name="activityArea" value="activityArea">Activity Area<br>
+<input type="checkbox" name="breakfastBar" value="breakfastBar">Breakfast Bar<br>
+<input type="checkbox" name="grillSpace" value="grillSpace">Grill Space<br>
+<input type="checkbox" name="firePit" value="firePit">Fire Pit<br>
+<label for="porch">Porch/Deck</label>
+<select name="porch">
+  <option value="nothing">No Deck/Porch</option>
+  <option value="threeSeason">3 Season</option>
+  <option value="fourSeason">4 Season</option>
+  <option value="screened">Screened</option>
+  <option value="deck">Deck Only</option>
+</select>
+<br>
+<label for="appliances">Appliance Condition</label>
+<select name="appliances">
+  <option value="5">Great/New</option>
+  <option value="4">Very good (3-5yr)</option>
+  <option value="3">Ok (1-2yr)</option>
+  <option value="2">Bad</option>
+  <option value="1">None</option>
+</select>
+<input type="checkbox" name="dishwasher" value="dishwasher">Dishwasher<br>
+<label for="inside">Inside Condition</label>
+<select name="inside">
+  <option value="5">Great/New</option>
+  <option value="4">Very good</option>
+  <option value="3">Ok (mostly cosmetic)</option>
+  <option value="2">Needs some work</option>
+</select>
+<br>
+<label for="outside">Outside Condition</label>
+<select name="outside">
+  <option value="5">Great/New</option>
+  <option value="4">Very good</option>
+  <option value="3">Ok</option>
+  <option value="2">Needs work</option>
+</select>
+<br>
+<textarea name="bestThing" rows="3" cols="50">
+Best
+</textarea>
+<br>
+<textarea name="worstThing" rows="3" cols="50">
+Worst
+</textarea>
+<br>
+<textarea name="notes" rows="3" cols="50">
+Notes
+</textarea>
+
+<input type="submit">
+</form>
+<!--
+<script>
+function autoPop() {
+    console.log(document.getElementById("lookupData").submit());
+}
+</script>
+-->
+
+</body>
+</html>
