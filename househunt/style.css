@@ -1,0 +1,93 @@
+body {
+		background-color:lightblue;
+}
+
+input[type=text]{
+		width:100%;
+}
+
+form {
+	background:gray;
+}
+
+form label {
+	font-size:15px
+}
+
+input[type=submit]{
+		width:100%;
+		height:40px;
+		background:green;
+}
+
+
+textarea{
+	resize:none;
+	width:100%;
+	background:cyan;
+	
+}
+
+.left {
+    width: 30%;
+    float: left;
+    text-align: left;
+	margin-bottom:5px;
+}
+.right {
+    width: 60%;
+    margin-left: 10px;
+    float:left;
+	margin-bottom:5px;
+}
+
+		
+.clearfix {
+	clear:both;
+}
+
+.houseLocation{
+	border-style:dashed;
+	border-color:orange;
+	width:100%;
+	margin-bottom:5px;
+	margin-top:10px;
+}
+
+.houseStats{
+	width:100%;
+	border-style:solid;
+	border-color:yellow;
+	margin-bottom:15px;
+}
+
+.houseStats label{
+		padding:5px;
+}
+
+.houseStats select{
+		padding:5px;
+		margin-bottom:10px;
+}
+
+.houseStats label {
+		font-size:15px;
+		margin-bottom:10px;
+}
+.houseStats input[type="checkbox"]{
+	width:25px;
+	height:25px;
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.houseAtt input[type="checkbox"]{
+	width:30px;
+	height:30px;
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.houseAtt label {
+		font-size:20px;
+}

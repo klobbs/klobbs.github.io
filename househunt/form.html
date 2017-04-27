@@ -1,0 +1,175 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<form method="post" action="send.php">
+<div class="houseLocation">
+<div>
+	<div class="left">
+		<label>Location: </label>
+	</div>
+	<div class="right">
+		<input type="text" name="location"/><br>
+	</div>
+</div>
+<div>
+	<div class="left">
+		<label for="neighborhood">Neighborhood: </label>
+	</div>
+	<div class="right">
+		<input type="text" name="neighborhood"><br>
+	</div>
+</div>
+<div>
+	<div class="left">	
+		<label for="listPrice">List Price: </label>
+	</div>
+	<div class="right">
+		<input type="text" name="listPrice">
+	</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="houseStats">
+	<br>
+	<label for="bedNum">Beds</label>
+	<select name="bedNum">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5">5</option>
+	  <option value="6">6</option>
+	</select>
+	<label for="bathNum">Baths</label>
+	<select name="bathNum">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	</select>
+	<label for="garage">Garage</label>
+	<select name="garage">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	</select>
+	<br>
+	<label for="floors">Floors Finished</label>
+	<select name="floors">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	</select>
+	<label>
+	Upstairs Half?
+	<input type="checkbox" name="halfFloor" value="open"/>
+	</label>
+</div>
+<div class="houseAtt">
+<label>
+	<input type="checkbox" name="open" value="open"/>
+	Open Floor Plan
+</label><br>
+<label>
+	<input type="checkbox" name="woodFireplace" value="woodFireplace"/>
+	Wood Fireplace
+</label><br>
+<label>
+	<input type="checkbox" name="woodFloor" value="woodFloor"/>
+	Wood Floor
+</label><br>
+<label>
+	<input type="checkbox" name="highCeiling" value="highCeiling"/>
+	High Ceiling
+</label><br>
+<label>
+	<input type="checkbox" name="offer" value="offer"/>
+	Offer during open
+</label><br>
+<label>
+	<input type="checkbox" name="kitchenCounter" value="kitchenCounter"/>
+	Kitchen Counter
+</label><br>
+<label>
+	<input type="checkbox" name="bathCounter" value="bathCounter"/>
+	Bath Counter
+</label><br>
+<label>
+	<input type="checkbox" name="naturalLight" value="naturalLight"/>
+	Natural Light
+</label><br>
+<label>
+	<input type="checkbox" name="activityArea" value="activityArea"/>
+	Activity Area
+</label><br>
+<label>
+	<input type="checkbox" name="breakfastBar" value="breakfastBar"/>
+	Breakfast Bar
+</label><br>
+<label>
+	<input type="checkbox" name="grillSpace" value="grillSpace"/>
+	Grill Space
+</label><br>
+<label>
+	<input type="checkbox" name="firePit" value="firePit"/>
+	Fire Pit
+</label>
+</div>
+<br><br>
+<label for="porch">Porch/Deck</label>
+<select name="porch">
+  <option value="nothing">No Deck/Porch</option>
+  <option value="threeSeason">3 Season</option>
+  <option value="fourSeason">4 Season</option>
+  <option value="screened">Screened</option>
+  <option value="deck">Deck Only</option>
+</select>
+<br>
+<div>
+<label for="appliances">Appliance Condition</label>
+<select name="appliances">
+  <option value="5">Great/New</option>
+  <option value="4">Very good (3-5yr)</option>
+  <option value="3">Ok (1-3yr)</option>
+  <option value="2">Bad</option>
+  <option value="1">None</option>
+</select>
+<label>
+	<input type="checkbox" name="dishwasher" value="dishwasher"/>
+	Dishwasher
+</label><br>
+<label for="inside">Inside Condition</label>
+<select name="inside">
+  <option value="5">Great/New</option>
+  <option value="4">Very good</option>
+  <option value="3">Good (maybe ugly)</option>
+  <option value="2">eh (mostly cosmetic)</option>
+  <option value="1">Needs some work</option>
+</select>
+<br>
+<label for="outside">Outside Condition</label>
+<select name="outside">
+  <option value="5">Great/New</option>
+  <option value="4">Very Good</option>
+  <option value="3">Good</option>
+  <option value="3">Good</option>
+  <option value="2">Ok</option>
+  <option value="1">Needs work</option>
+</select>
+<br><br>
+<textarea name="bestThing" rows="4">Best</textarea>
+<br>
+<textarea name="worstThing" rows="4">Worst</textarea>
+<br>
+<textarea name="notes" rows="6">Notes</textarea>
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
